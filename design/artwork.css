@@ -1,0 +1,41 @@
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--foreground); font: 400 26px/1.5 "Lamina UI", sans-serif; }
+#artwork { width: 1200px; overflow: hidden; position: relative; background-color: var(--preview-base); background-image: var(--preview-image); }
+.hero { height: 480px; padding: 48px 60px; }
+.wordmark { display: flex; align-items: center; gap: 15px; font: 400 22px/1.4 "Lamina Mono", monospace; }
+.wordmark svg { width: 32px; height: 32px; }
+.hero h1 { position: relative; z-index: 2; font-size: 76px; font-weight: 400; letter-spacing: -3.5px; line-height: 1.08; margin: 42px 0 25px; }
+.hero .lede { position: relative; z-index: 2; margin: 0; font-size: 25px; color: var(--muted-foreground); }
+.hero .signature { position: absolute; bottom: 40px; left: 60px; font: 400 18px/1.4 "Lamina Mono", monospace; color: var(--muted-foreground); }
+.composition { position: absolute; width: 300px; height: 350px; top: 65px; right: 55px; }
+.composition .sheet { position: absolute; border-radius: 21px; width: 235px; height: 170px; padding: 25px; display: flex; align-items: flex-start; gap: 15px; }
+.sheet svg { width: 47px; height: 47px; stroke-width: 1.25; }
+.sheet span { padding-top: 10px; font: 400 18px/1.4 "Lamina Mono", monospace; color: var(--muted-foreground); }
+.sheet-back { top: 0; right: 0; transform: rotate(9deg); }
+.sheet-mid { top: 83px; left: 0; transform: rotate(-7deg); }
+.sheet-front { top: 169px; right: 8px; transform: rotate(4deg); }
+.project { height: 292px; padding: 24px; }
+.project-surface { height: 244px; border-radius: 23px; padding: 28px 34px; }
+.eyebrow { font: 400 17px/1.5 "Lamina Mono", monospace; color: var(--muted-foreground); letter-spacing: 0.6px; }
+.project h2 { font-size: 47px; font-weight: 400; letter-spacing: -1.5px; line-height: 1.15; margin: 8px 0 11px; }
+.description { font-size: 25px; line-height: 1.55; margin: 0; max-width: 900px; color: var(--muted-foreground); }
+.project .project-symbol { position: absolute; right: 30px; top: 30px; width: 132px; height: 132px; border-radius: 25px; display: grid; place-items: center; }
+.project-symbol svg { width: 73px; height: 73px; stroke-width: 1.15; }
+.outbound { position: absolute; right: 35px; bottom: 25px; width: 27px; height: 27px; color: var(--muted-foreground); }
+.tenvell-word { font-weight: 400; }
+.mobile#artwork { width: 630px; }
+.mobile.hero { height: 660px; padding: 42px; }
+.mobile.hero .wordmark { font-size: 23px; }
+.mobile.hero h1 { font-size: 69px; letter-spacing: -3px; margin-top: 55px; line-height: 1.14; }
+.mobile.hero .lede { max-width: 490px; font-size: 28px; line-height: 1.6; }
+.mobile.hero .signature { left: 42px; bottom: 35px; font-size: 19px; }
+.mobile .composition { transform: scale(.6); transform-origin: bottom right; top: auto; bottom: 28px; right: 30px; opacity: .9; }
+.mobile.project { height: 420px; padding: 20px; }
+.mobile .project-surface { height: 380px; padding: 28px 29px; border-radius: 24px; }
+.mobile .eyebrow { font-size: 20px; }
+.mobile.project h2 { font-size: 56px; margin: 15px 0 20px; line-height: 1.1; }
+.mobile .description { font-size: 30px; line-height: 1.5; max-width: 510px; }
+.mobile .description br { display: none; }
+.mobile .project-symbol { width: 78px; height: 78px; top: 24px; right: 24px; border-radius: 18px; }
+.mobile .project-symbol svg { width: 44px; height: 44px; }
+.mobile .outbound { right: 27px; bottom: 25px; width: 28px; height: 28px; }
