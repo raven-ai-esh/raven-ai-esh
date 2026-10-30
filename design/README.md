@@ -24,3 +24,10 @@ Wait for fonts to load (`html[data-artwork-ready="true"]`), then capture the
 Desktop dimensions are 1200×480 for the hero and 1200×292 for project cards;
 mobile dimensions are 630×660 and 630×420. There are no third-party badge or
 statistics services, scheduled generators or runtime dependencies in the profile.
+
+## Avatar
+
+The profile avatar is `assets/avatar-raven.jpg`, a 500×500 JPEG export prepared for
+GitHub. Its generated source is preserved as `assets/avatar-raven-source.png`.
+The built-in ImageGen prompts and the targeted raven-beak revision are recorded
+in [avatar-prompt.md](avatar-prompt.md).
