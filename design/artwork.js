@@ -2,6 +2,7 @@ const params = new URLSearchParams(location.search);
 const theme = params.get('theme') === 'light' ? 'light' : 'dark';
 const size = params.get('size') === 'mobile' ? 'mobile' : 'desktop';
 const name = params.get('art') || 'hero';
+const social = params.get('format') === 'social';
 document.documentElement.dataset.theme = theme;
 
 const icons = {
@@ -21,6 +22,12 @@ const projects = {
   tenvell: { title: 'tenvell', category: '03 / interface design', icon: 'tenvell', finish: 'clear', description: 'Thin glass. Clear interfaces.<br> A React UI kit with original Lamina typefaces.' },
   'note-island': { title: 'Note Island', category: '04 / everyday macOS', icon: 'island', finish: 'smoke', description: 'A little workspace at the top of your Mac.<br> Notes, translation, calendar, recordings and screenshots.' },
 };
+const covers = {
+  mio: { lead: 'Memory, made visible.', text: 'Linked notes, hybrid search and a memory graph for AI agents.' },
+  arv: { lead: 'Research with an evidence graph.', text: 'Observations, hypotheses and inspectable grounds.' },
+  tenvell: { lead: 'Thin glass. Clear interfaces.', text: 'React components. Original Lamina typefaces.' },
+  'note-island': { lead: 'A little workspace at the top of your Mac.', text: 'Notes, translation, calendar, recordings and screenshots.' },
+};
 const artwork = document.getElementById('artwork');
 if (name === 'hero') {
   artwork.className = `hero ${size === 'mobile' ? 'mobile' : ''}`;
@@ -36,16 +43,34 @@ if (name === 'hero') {
     <span class="signature">independent projects / shared in the open</span>`;
 } else if (projects[name]) {
   const project = projects[name];
-  artwork.className = `project ${size === 'mobile' ? 'mobile' : ''}`;
-  artwork.innerHTML = `<article class="project-surface glass-surface" data-glass="${project.finish}">
+  if (social) {
+    const cover = covers[name];
+    artwork.className = 'social';
+    artwork.innerHTML = `<article class="social-surface glass-surface" data-glass="${project.finish}">
+      <div class="cover-brand"><img src="../assets/avatar-raven.jpg" width="38" height="38" alt="Raven"><span>raven-ai-esh</span></div>
+      <div class="cover-category">${project.category.split(' / ')[1]}</div>
+      <h1>${project.title}</h1>
+      <p class="cover-lead">${cover.lead}</p>
+      <p class="cover-description">${cover.text}</p>
+      <div class="cover-illustration" aria-hidden="true">
+        <div class="cover-sheet cover-sheet-back glass-surface" data-glass="prism"></div>
+        <div class="cover-sheet cover-sheet-front glass-surface" data-glass="${project.finish}">${icon(project.icon)}</div>
+      </div>
+      <footer class="cover-footer"><span>github.com/raven-ai-esh/${name}</span>${icon('arrow', '0 0 28 28')}</footer>
+    </article>`;
+  } else {
+    artwork.className = `project ${size === 'mobile' ? 'mobile' : ''}`;
+    artwork.innerHTML = `<article class="project-surface glass-surface" data-glass="${project.finish}">
     <div class="eyebrow">${project.category}</div>
     <h2>${project.title}</h2>
     <p class="description">${project.description}</p>
     <div class="project-symbol glass-surface" data-glass="${project.finish}">${icon(project.icon)}</div>
     <div class="outbound">${icon('arrow', '0 0 28 28')}</div>
   </article>`;
+  }
 } else {
   throw new Error(`Unknown artwork: ${name}`);
 }
 await document.fonts.ready;
+await Promise.all([...artwork.querySelectorAll('img')].map(image => image.decode()));
 document.documentElement.dataset.artworkReady = 'true';

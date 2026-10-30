@@ -31,3 +31,10 @@ The profile avatar is `assets/avatar-raven.jpg`, a 500×500 JPEG export prepared
 GitHub. Its generated source is preserved as `assets/avatar-raven-source.png`.
 The built-in ImageGen prompts and the targeted raven-beak revision are recorded
 in [avatar-prompt.md](avatar-prompt.md).
+
+## Repository social previews
+
+Append `&format=social` to a project artwork URL for its 1280×640 social cover.
+The four published dark covers are `assets/social-mio.jpg`, `assets/social-arv.jpg`,
+`assets/social-tenvell.jpg` and `assets/social-note-island.jpg`.
+They use the same tenvell styles, Lamina fonts and Raven avatar as the profile.

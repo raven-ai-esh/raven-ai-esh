@@ -39,3 +39,18 @@ body { margin: 0; color: var(--foreground); font: 400 26px/1.5 "Lamina UI", sans
 .mobile .project-symbol { width: 78px; height: 78px; top: 24px; right: 24px; border-radius: 18px; }
 .mobile .project-symbol svg { width: 44px; height: 44px; }
 .mobile .outbound { right: 27px; bottom: 25px; width: 28px; height: 28px; }
+.social#artwork { width: 1280px; height: 640px; padding: 40px; }
+.social-surface { height: 560px; padding: 38px 44px; border-radius: 28px; }
+.cover-brand { display: flex; align-items: center; gap: 13px; font: 400 21px/1.4 "Lamina Mono", monospace; color: var(--muted-foreground); }
+.cover-brand img { border-radius: 50%; }
+.cover-category { margin-top: 39px; font: 400 20px/1.5 "Lamina Mono", monospace; color: var(--muted-foreground); }
+.social h1 { position: relative; z-index: 2; max-width: 840px; margin: 12px 0 16px; font-size: 100px; line-height: 1.1; font-weight: 400; letter-spacing: -4px; }
+.cover-lead { position: relative; z-index: 2; max-width: 840px; margin: 0 0 15px; font-size: 34px; line-height: 1.4; }
+.cover-description { position: relative; z-index: 2; max-width: 840px; margin: 0; font-size: 26px; line-height: 1.55; color: var(--muted-foreground); }
+.cover-illustration { position: absolute; right: 45px; top: 132px; width: 230px; height: 245px; }
+.social .cover-sheet { position: absolute; width: 202px; height: 202px; border-radius: 28px; display: grid; place-items: center; }
+.cover-sheet-back { right: 0; top: 0; transform: rotate(10deg); }
+.cover-sheet-front { left: 0; top: 34px; transform: rotate(-6deg); }
+.cover-sheet svg { width: 115px; height: 115px; stroke-width: 1.05; }
+.cover-footer { position: absolute; left: 44px; right: 44px; bottom: 31px; padding-top: 24px; border-top: 1px solid var(--separator); display: flex; align-items: center; justify-content: space-between; font: 400 20px/1.4 "Lamina Mono", monospace; color: var(--muted-foreground); }
+.cover-footer svg { width: 29px; height: 29px; }
