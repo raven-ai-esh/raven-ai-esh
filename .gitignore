@@ -1,3 +1,5 @@
 evidence/
 .DS_Store
 __pycache__/
+.playwright-cli/
+output/playwright/

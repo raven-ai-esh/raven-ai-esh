@@ -3,6 +3,7 @@ const theme = params.get('theme') === 'light' ? 'light' : 'dark';
 const size = params.get('size') === 'mobile' ? 'mobile' : 'desktop';
 const name = params.get('art') || 'hero';
 const social = params.get('format') === 'social';
+const xHeader = params.get('format') === 'x-header';
 document.documentElement.dataset.theme = theme;
 
 const icons = {
@@ -30,7 +31,7 @@ const covers = {
 };
 const artwork = document.getElementById('artwork');
 if (name === 'hero') {
-  artwork.className = `hero ${size === 'mobile' ? 'mobile' : ''}`;
+  artwork.className = `hero ${size === 'mobile' ? 'mobile' : ''} ${xHeader ? 'x-header' : ''}`;
   artwork.innerHTML = `
     <div class="wordmark">${icon('raven', '0 0 32 32')}<span>raven-ai-esh</span></div>
     <h1>Tools for agents.<br>Apps for people.</h1>

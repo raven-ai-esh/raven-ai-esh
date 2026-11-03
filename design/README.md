@@ -27,8 +27,8 @@ statistics services, scheduled generators or runtime dependencies in the profile
 
 ## Avatar
 
-The profile avatar is `assets/avatar-raven.jpg`, a 500×500 JPEG export prepared for
-GitHub. Its generated source is preserved as `assets/avatar-raven-source.png`.
+The Raven brand avatar is `assets/avatar-raven.jpg`, a 500×500 JPEG export.
+Its generated source is preserved as `assets/avatar-raven-source.png`.
 The built-in ImageGen prompts and the targeted raven-beak revision are recorded
 in [avatar-prompt.md](avatar-prompt.md).
 
@@ -38,3 +38,11 @@ Append `&format=social` to a project artwork URL for its 1280×640 social cover.
 The four published dark covers are `assets/social-mio.jpg`, `assets/social-arv.jpg`,
 `assets/social-tenvell.jpg` and `assets/social-note-island.jpg`.
 They use the same tenvell styles, Lamina fonts and Raven avatar as the profile.
+
+## X profile
+
+Use `/design/?art=hero&theme=dark&format=x-header` for the 1500×500 X banner.
+The lower-left area stays clear for X's overlapping avatar. The export is
+`assets/x-header-raven.jpg`. The author's approved portrait is managed separately
+in GitHub and X profile settings; the Raven brand mark remains in the artwork.
+This layout extends the same code and fonts as the GitHub artwork.

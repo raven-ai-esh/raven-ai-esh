@@ -54,3 +54,11 @@ body { margin: 0; color: var(--foreground); font: 400 26px/1.5 "Lamina UI", sans
 .cover-sheet svg { width: 115px; height: 115px; stroke-width: 1.05; }
 .cover-footer { position: absolute; left: 44px; right: 44px; bottom: 31px; padding-top: 24px; border-top: 1px solid var(--separator); display: flex; align-items: center; justify-content: space-between; font: 400 20px/1.4 "Lamina Mono", monospace; color: var(--muted-foreground); }
 .cover-footer svg { width: 29px; height: 29px; }
+
+/* X's avatar covers the lower-left corner of the banner on profile pages. */
+.x-header#artwork { width: 1500px; height: 500px; padding: 42px 70px; }
+.x-header .wordmark { font-size: 23px; }
+.x-header h1 { margin: 29px 0 0; font-size: 86px; line-height: 1.08; }
+.x-header .lede { position: absolute; left: 450px; bottom: 52px; font-size: 27px; }
+.x-header .composition { right: 90px; top: 59px; }
+.x-header .signature { display: none; }

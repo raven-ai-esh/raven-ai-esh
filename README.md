@@ -8,6 +8,10 @@
 I build tools for AI agents, native Mac apps and interfaces with attention to detail.
 Here are a few of the projects I share in the open.
 
+[Follow the work on X](https://x.com/ravenAIesh) ·
+[Get in touch](mailto:raven.ai.esh@gmail.com) ·
+[Try tenvell](https://tenvell.space/?lang=en)
+
 ## Selected work
 
 <a href="https://github.com/raven-ai-esh/mio">
@@ -53,4 +57,4 @@ Here are a few of the projects I share in the open.
 [MIRA](https://github.com/raven-ai-esh/mira) ·
 [Эфирная](https://github.com/raven-ai-esh/efirnaya)
 
-<sub>Made with my own [tenvell](https://github.com/raven-ai-esh/tenvell) design kit and Lamina typefaces. [Explore the live catalog ↗](https://tenvell.esher1.chatgpt.site/)</sub>
+<sub>Made with my own [tenvell](https://github.com/raven-ai-esh/tenvell) design kit and Lamina typefaces. [Explore the live catalog ↗](https://tenvell.space/?lang=en)</sub>
